@@ -12,6 +12,7 @@ namespace LineComparisonComputation
                 Console.WriteLine("\nWelcome to Line Comparison Computation Program");
                 Console.WriteLine("\n1. Calculate single line length");
                 Console.WriteLine("2. Calculate if two lines are equal or not");
+                Console.WriteLine("3. Comparinson of two lines");
                 Console.WriteLine("0. Exit");
                 Console.Write("Enter your choice : ");
                 choice = Convert.ToInt32(Console.ReadLine());
@@ -24,6 +25,10 @@ namespace LineComparisonComputation
                     case 2:
                         EqualityOfTwoLines equalityOfTwoLines = new EqualityOfTwoLines();
                         equalityOfTwoLines.Equality();
+                        break;
+                    case 3:
+                        TwoLinesComparison twoLinesComparison = new TwoLinesComparison();
+                        twoLinesComparison.Comparison();
                         break;
                 }
 
